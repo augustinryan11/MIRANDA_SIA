@@ -10,9 +10,13 @@
 
     // column sa table
     protected $fillable = [
-        'user', 'password','gender'
+        'user', 'password','gender','jobid'
     ];
 
     public $timestamps = false;
     protected $primaryKey = 'userid';
+
+    protected $hidden = [
+        'password',
+    ];
  }
